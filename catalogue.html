@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catégories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+</head>
+<style>
+  /* Général */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('hhg.jpeg') ;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Section Catégories */
+.categories-section {
+  background-color: #e9ecef;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+/* Cartes Catégories */
+.category-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.category-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.category-card p {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+}
+
+</style>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">E-Learning</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="catalogue.html">Catégories</a></li>
+          <li class="nav-item"><a class="nav-link" href="insc.html">Inscription</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Catégories -->
+  <section class="categories-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Explorez nos Catégories de Cours</h2>
+      <div class="row">
+        <!-- Catégorie 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card shadow-lg rounded p-4 bg-light text-center animate__animated animate__fadeInUp">
+            <img src="dv.jpeg" alt="Catégorie 1" class="img-fluid mb-3 rounded">
+            <h4 class="category-title">Développement Web</h4>
+            <p>Apprenez à créer des sites web modernes et dynamiques avec HTML, CSS, JavaScript et plus.</p>
+            <a href="#" class="btn btn-primary">Explorer</a>
+          </div>
+        </div>
+        <!-- Catégorie 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card shadow-lg rounded p-4 bg-light text-center animate__animated animate__fadeInUp">
+            <img src="dsa.jpeg" alt="Catégorie 2" class="img-fluid mb-3 rounded">
+            <h4 class="category-title">Data Science</h4>
+            <p>Plongez dans l'analyse de données, la statistique et l'apprentissage automatique.</p>
+            <a href="#" class="btn btn-primary">Explorer</a>
+          </div>
+        </div>
+        <!-- Catégorie 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card shadow-lg rounded p-4 bg-light text-center animate__animated animate__fadeInUp">
+            <img src="graphic.jpeg" alt="Catégorie 3" class="img-fluid mb-3 rounded">
+            <h4 class="category-title">Design Graphique</h4>
+            <p>Apprenez à créer des designs professionnels avec Photoshop, Illustrator et plus.</p>
+            <a href="#" class="btn btn-primary">Explorer</a>
+          </div>
+        </div>
+        <!-- Catégorie 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card shadow-lg rounded p-4 bg-light text-center animate__animated animate__fadeInUp">
+            <img src="marck.jpeg" alt="Catégorie 4" class="img-fluid mb-3 rounded">
+            <h4 class="category-title">Marketing Digital</h4>
+            <p>Apprenez les meilleures pratiques du marketing en ligne, y compris le SEO et le SEM.</p>
+            <a href="#" class="btn btn-primary">Explorer</a>
+          </div>
+        </div>
+        <!-- Catégorie 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card shadow-lg rounded p-4 bg-light text-center animate__animated animate__fadeInUp">
+            <img src="pht.jpeg" alt="Catégorie 5" class="img-fluid mb-3 rounded">
+            <h4 class="category-title">Photographie</h4>
+            <p>Devenez un expert en photographie avec nos cours dédiés à la prise de vue et la retouche.</p>
+            <a href="#" class="btn btn-primary">Explorer</a>
+          </div>
+        </div>
+        <!-- Catégorie 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card shadow-lg rounded p-4 bg-light text-center animate__animated animate__fadeInUp">
+            <img src="langues.jpeg" alt="Catégorie 6" class="img-fluid mb-3 rounded">
+            <h4 class="category-title">Langues Étrangères</h4>
+            <p>Apprenez de nouvelles langues avec des cours interactifs et immersifs.</p>
+            <a href="#" class="btn btn-primary">Explorer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 E-Learning. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
